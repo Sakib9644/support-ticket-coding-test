@@ -15,8 +15,8 @@
                             <th>Subject</th>
                             <th>Message</th>
                             <th>Status</th>
-                            <th>Response</th> <!-- New column for showing responses -->
                             @if (auth()->user()->user_type == 'admin')
+                            <th>Response</th> <!-- New column for showing responses -->
                                 <th>Actions</th>
                             @endif
                         </tr>
