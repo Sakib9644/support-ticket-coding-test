@@ -57,13 +57,13 @@
                                                 @method('PATCH')
                                                 <button type="submit" class="btn btn-success btn-sm">Open</button>
                                             </form>
+                                            <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal"
+                                                data-bs-target="#responseModal-{{ $ticket->id }}">
+                                                Respond
+                                            </button>
                                         @endif
 
                                         <!-- Button to Open Response Modal -->
-                                        <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal"
-                                            data-bs-target="#responseModal-{{ $ticket->id }}">
-                                            Respond
-                                        </button>
 
                                         <!-- Modal for ticket response -->
                                         <div class="modal fade" id="responseModal-{{ $ticket->id }}" tabindex="-1"
